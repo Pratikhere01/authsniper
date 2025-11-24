@@ -54,7 +54,7 @@
 
 ## 📦 Installation
 
-### 🔧 Option 1: Developer Setup (Recommended)
+### 🔧 Setup (Recommended)
 
 ```bash
 git clone https://github.com/pr4tikr4y/authsniper.git
@@ -62,5 +62,12 @@ cd authsniper
 python -m venv venv
 source venv/bin/activate    # Windows: venv\Scripts\activate
 pip install -e .
+
+Usage:
+
+authsniper -c examples/target_example.yaml --checks all --json
+authsniper -c examples/target_example.yaml --checks auth
+authsniper -c examples/target_example.yaml --checks session
+authsniper -c examples/target_example.yaml --checks jwt
 
 
