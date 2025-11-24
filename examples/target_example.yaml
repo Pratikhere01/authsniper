@@ -1,0 +1,26 @@
+target_name: "Local Test App"
+base_url: "https://demo.owasp-juice.shop/#/login"
+
+login:
+  url: "https://demo.owasp-juice.shop/#/login"
+  method: "POST"
+  username_field: "Email"
+  password_field: "Password"
+
+  test_username: "testuser"
+  test_passwords:
+    - "Password123"
+    - "Welcome@123"
+    - "Demo@123"
+
+  success_indicator: "Dashboard"
+  failure_indicator: "Invalid username or password"
+
+session:
+  protected_url: "https://demo.owasp-juice.shop/dashboard"
+
+jwt:
+  sample_token: ""
+  expected_alg: "HS256"
+  max_lifetime_seconds: 86400
+
